@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "thinqconnect-mcp"
-version = "0.0.4"
+version = "0.0.5"
 description = "ThinQ Connect MCP"
 authors = [
     {name = "ThinQ Connect", email = "thinq-connect@lge.com"}
@@ -20,9 +20,9 @@ classifiers = [
 ]
 dependencies = [
     "thinqconnect",
-    "python-dotenv",
-    "mcp",
-    "aiohttp"
+    "python-dotenv==1.1.1",
+    "mcp==1.12.3",
+    "aiohttp==3.12.15"
 ]
 
 [project.scripts]

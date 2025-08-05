@@ -21,7 +21,6 @@ COUNTRY: Final[str] = os.getenv("THINQ_COUNTRY")
 # Constants
 CLIENT_ID: Final[str] = "thinqconnect-mcp-client"
 MCP_NAME: Final[str] = "thinqconnect-mcp"
-MCP_DESCRIPTION: Final[str] = "ThinQ Connect MPC Server"
 
 
 # Validation for environment variables
@@ -46,7 +45,7 @@ def setup_thinq_api() -> ThinQApi:
 
 def setup_mcp() -> FastMCP:
     """Initialize and configure MCP server"""
-    return FastMCP(name=MCP_NAME, description=MCP_DESCRIPTION)
+    return FastMCP(name=MCP_NAME)
 
 
 # Initialize MCP and API
