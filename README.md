@@ -17,6 +17,10 @@ This server provides integrated control capabilities including status monitoring
 - [Tool Reference](#tool-reference)
 
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/thinq-connect-thinqconnect-mcp).
+
 ## Features
 
 - **Device List Query**  
