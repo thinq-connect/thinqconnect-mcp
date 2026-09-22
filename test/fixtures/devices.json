@@ -1,0 +1,20 @@
+[
+  {
+    "deviceId": "0f1b2c3d-4e5f-6071-8293-a4b5c6d7e8f9",
+    "deviceInfo": {
+      "alias": "거실 에어컨",
+      "deviceType": "DEVICE_AIR_CONDITIONER",
+      "modelName": "FQ17V9DWA2",
+      "reportable": true
+    }
+  },
+  {
+    "deviceId": "1a2b3c4d-5e6f-7081-92a3-b4c5d6e7f809",
+    "deviceInfo": {
+      "alias": "Robot Cleaner",
+      "deviceType": "DEVICE_ROBOT_CLEANER",
+      "modelName": "R9MASTER",
+      "reportable": false
+    }
+  }
+]

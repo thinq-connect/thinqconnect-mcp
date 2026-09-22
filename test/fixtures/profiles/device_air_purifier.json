@@ -1,0 +1,295 @@
+{
+  "property": {
+    "airPurifierJobMode": {
+      "currentJobMode": {
+        "type": "enum",
+        "mode": [
+          "r",
+          "w"
+        ],
+        "value": {
+          "r": [
+            "CLEAN",
+            "SLEEP"
+          ],
+          "w": [
+            "CLEAN",
+            "SLEEP"
+          ]
+        }
+      }
+    },
+    "operation": {
+      "airPurifierOperationMode": {
+        "type": "enum",
+        "mode": [
+          "r",
+          "w"
+        ],
+        "value": {
+          "r": [
+            "POWER_ON",
+            "POWER_OFF"
+          ],
+          "w": [
+            "POWER_ON",
+            "POWER_OFF"
+          ]
+        }
+      }
+    },
+    "timer": {
+      "absoluteHourToStart": {
+        "type": "number",
+        "mode": [
+          "r",
+          "w"
+        ]
+      },
+      "absoluteMinuteToStart": {
+        "type": "number",
+        "mode": [
+          "r",
+          "w"
+        ]
+      },
+      "absoluteStartTimer": {
+        "type": "enum",
+        "mode": [
+          "r",
+          "w"
+        ],
+        "value": {
+          "r": [
+            "SET",
+            "UNSET"
+          ],
+          "w": [
+            "UNSET"
+          ]
+        }
+      },
+      "absoluteHourToStop": {
+        "type": "number",
+        "mode": [
+          "r",
+          "w"
+        ]
+      },
+      "absoluteMinuteToStop": {
+        "type": "number",
+        "mode": [
+          "r",
+          "w"
+        ]
+      },
+      "absoluteStopTimer": {
+        "type": "enum",
+        "mode": [
+          "r",
+          "w"
+        ],
+        "value": {
+          "r": [
+            "SET",
+            "UNSET"
+          ],
+          "w": [
+            "UNSET"
+          ]
+        }
+      }
+    },
+    "airFlow": {
+      "windStrength": {
+        "type": "enum",
+        "mode": [
+          "r",
+          "w"
+        ],
+        "value": {
+          "r": [
+            "LOW",
+            "MID",
+            "HIGH",
+            "POWER",
+            "AUTO"
+          ],
+          "w": [
+            "LOW",
+            "MID",
+            "HIGH",
+            "POWER",
+            "AUTO"
+          ]
+        }
+      },
+      "windStrengthDetail": {
+        "type": "enum",
+        "mode": [
+          "r",
+          "w"
+        ],
+        "value": {
+          "r": [
+            "OFF",
+            "LOW",
+            "MID",
+            "HIGH",
+            "POWER",
+            "AUTO"
+          ],
+          "w": [
+            "OFF",
+            "LOW",
+            "MID",
+            "HIGH",
+            "POWER",
+            "AUTO"
+          ]
+        }
+      }
+    },
+    "airQualitySensor": {
+      "oder": {
+        "type": "number",
+        "mode": [
+          "r"
+        ]
+      },
+      "odor": {
+        "type": "number",
+        "mode": [
+          "r"
+        ]
+      },
+      "odorLevel": {
+        "type": "enum",
+        "mode": [
+          "r"
+        ],
+        "value": {
+          "r": [
+            "INVALID",
+            "WEAK",
+            "NORMAL",
+            "STRONG",
+            "VERY_STRONG"
+          ]
+        }
+      },
+      "PM1": {
+        "type": "number",
+        "mode": [
+          "r"
+        ]
+      },
+      "PM1Level": {
+        "type": "enum",
+        "mode": [
+          "r"
+        ],
+        "value": {
+          "r": [
+            "INVALID",
+            "GOOD",
+            "MODERATE",
+            "UNHEALTHY",
+            "POOR"
+          ]
+        }
+      },
+      "PM2": {
+        "type": "number",
+        "mode": [
+          "r"
+        ]
+      },
+      "PM2Level": {
+        "type": "enum",
+        "mode": [
+          "r"
+        ],
+        "value": {
+          "r": [
+            "INVALID",
+            "GOOD",
+            "MODERATE",
+            "UNHEALTHY",
+            "POOR"
+          ]
+        }
+      },
+      "PM10": {
+        "type": "number",
+        "mode": [
+          "r"
+        ]
+      },
+      "PM10Level": {
+        "type": "enum",
+        "mode": [
+          "r"
+        ],
+        "value": {
+          "r": [
+            "INVALID",
+            "GOOD",
+            "MODERATE",
+            "UNHEALTHY",
+            "POOR"
+          ]
+        }
+      },
+      "totalPollution": {
+        "type": "number",
+        "mode": [
+          "r"
+        ]
+      },
+      "totalPollutionLevel": {
+        "type": "enum",
+        "mode": [
+          "r"
+        ],
+        "value": {
+          "r": [
+            "INVALID",
+            "GOOD",
+            "NORMAL",
+            "BAD",
+            "VERY_BAD"
+          ]
+        }
+      },
+      "monitoringEnabled": {
+        "type": "enum",
+        "mode": [
+          "r"
+        ],
+        "value": {
+          "r": [
+            "ON_WORKING",
+            "ALWAYS"
+          ]
+        }
+      }
+    },
+    "filterInfo": {
+      "filterRemainPercent": {
+        "type": "number",
+        "mode": [
+          "r"
+        ]
+      }
+    }
+  },
+  "notification": {
+    "push": [
+      "TIME_TO_CHANGE_FILTER",
+      "POLLUTION_IS_HIGH",
+      "TIME_TO_CLEAN_FILTER",
+      "LACK_OF_WATER"
+    ]
+  }
+}

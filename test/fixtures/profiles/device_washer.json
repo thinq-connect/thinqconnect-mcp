@@ -1,0 +1,180 @@
+{
+  "property": [
+    {
+      "runState": {
+        "currentState": {
+          "type": "enum",
+          "mode": [
+            "r"
+          ],
+          "value": {
+            "r": [
+              "RESERVED",
+              "RINSING",
+              "FROZEN_PREVENT_INITIAL",
+              "FROZEN_PREVENT_RUNNING",
+              "END",
+              "RINSE_HOLD",
+              "SPINNING",
+              "REFRESHING",
+              "ADD_DRAIN",
+              "DETERGENT_AMOUNT",
+              "POWER_OFF",
+              "DETECTING",
+              "PAUSE",
+              "PREWASH",
+              "RUNNING",
+              "FROZEN_PREVENT_PAUSE",
+              "INITIAL",
+              "DRYING",
+              "ERROR"
+            ]
+          }
+        }
+      },
+      "operation": {
+        "washerOperationMode": {
+          "type": "enum",
+          "mode": [
+            "w"
+          ],
+          "value": {
+            "w": [
+              "START",
+              "STOP",
+              "POWER_OFF"
+            ]
+          }
+        }
+      },
+      "timer": {
+        "remainHour": {
+          "type": "range",
+          "mode": [
+            "r"
+          ],
+          "value": {
+            "r": {
+              "max": 30,
+              "min": 0,
+              "step": 1,
+              "except": []
+            }
+          }
+        },
+        "remainMinute": {
+          "type": "range",
+          "mode": [
+            "r"
+          ],
+          "value": {
+            "r": {
+              "max": 59,
+              "min": 0,
+              "step": 1,
+              "except": []
+            }
+          }
+        },
+        "totalHour": {
+          "type": "range",
+          "mode": [
+            "r"
+          ],
+          "value": {
+            "r": {
+              "max": 30,
+              "min": 0,
+              "step": 1,
+              "except": []
+            }
+          }
+        },
+        "totalMinute": {
+          "type": "range",
+          "mode": [
+            "r"
+          ],
+          "value": {
+            "r": {
+              "max": 59,
+              "min": 0,
+              "step": 1,
+              "except": []
+            }
+          }
+        },
+        "relativeMinuteToStop": {
+          "type": "range",
+          "mode": [
+            "r"
+          ],
+          "value": {
+            "r": {
+              "max": 59,
+              "min": 0,
+              "step": 1,
+              "except": []
+            }
+          }
+        },
+        "relativeHourToStop": {
+          "type": "range",
+          "mode": [
+            "r",
+            "w"
+          ],
+          "value": {
+            "r": {
+              "max": 19,
+              "min": 3,
+              "step": 1,
+              "except": []
+            },
+            "w": {
+              "max": 19,
+              "min": 3,
+              "step": 1,
+              "except": []
+            }
+          }
+        }
+      },
+      "remoteControlEnable": {
+        "remoteControlEnabled": {
+          "type": "boolean",
+          "mode": [
+            "r"
+          ],
+          "value": {
+            "r": [
+              true,
+              false
+            ]
+          }
+        }
+      },
+      "location": {
+        "locationName": "MAIN"
+      }
+    }
+  ],
+  "notification": {
+    "push": [
+      "WASHING_IS_COMPLETE",
+      "ERROR_DURING_WASHING"
+    ]
+  },
+  "error": [
+    "WATER_DRAIN_ERROR",
+    "WATER_SUPPLY_ERROR",
+    "OUT_OF_BALANCE_ERROR",
+    "OVERFILL_ERROR",
+    "UNABLE_TO_LOCK_ERROR",
+    "WATER_LEVEL_SENSOR_ERROR",
+    "TEMPERATURE_SENSOR_ERROR",
+    "LOCKED_MOTOR_ERROR",
+    "POWER_FAIL_ERROR",
+    "DOOR_OPEN_ERROR"
+  ]
+}

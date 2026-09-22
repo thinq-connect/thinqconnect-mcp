@@ -1,0 +1,29 @@
+Device status information is as follows.
+Please relay appropriately to the user.
+## Status Information
+{
+  "airConJobMode": {
+    "currentJobMode": "COOL"
+  },
+  "operation": {
+    "airConOperationMode": "POWER_ON"
+  },
+  "temperature": {
+    "currentTemperature": 27,
+    "targetTemperature": 24,
+    "unit": "C"
+  },
+  "airQualitySensor": {
+    "PM1": 8,
+    "PM2": 12,
+    "humidity": 46.5,
+    "odor": null
+  },
+  "powerSave": {
+    "powerSaveEnabled": false
+  },
+  "timer": {
+    "relativeHourToStart": 0,
+    "relativeMinuteToStart": 0
+  }
+}
